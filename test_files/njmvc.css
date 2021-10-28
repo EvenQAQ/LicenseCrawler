@@ -1,0 +1,74 @@
+.tg-hero {
+    background-color: #001f4e !important;
+}
+
+
+.intro {
+    background-color: #dedfe1;
+    background-image: none;
+}
+
+.btn-primary, .btn-info {
+    background-color: #001f4e !important;
+}
+
+.btn-primary, .search-form .search-submit {
+    background-color: #001f4e !important;
+    border-color: #001f4e !important;
+}
+
+.btn-secondary {
+    background-color: #001f4e !important;
+    border-color: #001f4e !important;
+}
+
+.nav-tabs .nav-item.active {
+    background-color: #001f4e;
+}
+
+.overlay-card {
+    background-color: #001f4e;
+}
+
+.cards > div {
+    background-color: #001f4e;
+}
+
+.nav-tabs .nav-item {
+    background-color: #4d555e;
+}
+
+.three {
+    background-color: #c9ccce;
+}
+
+.pickmeup {
+    background: #4d555e;
+    background-color: #4d555e;
+}
+
+.boxes {
+    background-color: #001f4e;
+}
+
+.text-danger {
+    font-weight: bold;
+    font-size: 150%;
+    margin: 15px;
+}
+
+.customInformationText {
+    font-weight: bold;
+    font-size: 200%;
+    padding: 10px;
+}
+
+.appt-first-row {
+    background-color: #dedfe1 !important;
+    color: #636a72 !important;
+}
+
+    .appt-first-row span {
+        background-color: #dedfe1 !important;
+        color: #636a72 !important;
+    }
