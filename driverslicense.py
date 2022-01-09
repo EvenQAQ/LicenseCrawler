@@ -26,14 +26,13 @@ expect_date_text = ["Next Available: 09/18",
 priority_list = priority_list0
 
 # driver & appointment info
-personal_info_0 = {'firstName': 'Yijie',
-                   'lastName': 'Xu', 'phone': '(609) 356-9060', 'email': 'yijiex@princeton.edu', 'birthDate': "10/21/1998", 'driverLicense': "X90017900060981"}
-personal_info_1 = {'firstName': 'Sicheng',
-                   'lastName': 'Yin', 'phone': '(753) 697-3514', 'email': 'yinsicheng1999@outlook.com', 'birthDate': '01/19/1999'}
-personal_info_2 = {'firstName': 'Dazhao',
-                   'lastName': 'Yin', 'phone': '(626) 716-3579', 'email': 'evenqaq@outlook.com', 'birthDate': '06/20/1974'}
-personal_info_3 = {'firstName': 'Wenmei',
-                   'lastName': 'Wu', 'phone': '(609) 718-9911', 'email': 'even_sc@163.com', 'birthDate': '07/08/1972'}
+personal_infos = [{'firstName': 'XXX',
+                   'lastName': 'XX', 'phone': '(XXX) XXX-XXXX', 'email': 'XXX@XXX.XXX', 'birthDate': 'MM/DD/YYYY', 'driverLicense': 'XXXXXXXXXXXXXXX'},
+                  {'firstName': 'XXX',
+                   'lastName': 'XX', 'phone': '(XXX) XXX-XXXX', 'email': 'XXX@XXX.XXX', 'birthDate': 'MM/DD/YYYY', 'driverLicense': 'XXXXXXXXXXXXXXX'},
+                  {'firstName': 'XXX',
+                   'lastName': 'XX', 'phone': '(XXX) XXX-XXXX', 'email': 'XXX@XXX.XXX', 'birthDate': 'MM/DD/YYYY', 'driverLicense': 'XXXXXXXXXXXXXXX'}]
+
 # permitType = 'Class D'
 
 
@@ -67,16 +66,10 @@ parser = argparse.ArgumentParser(description='Please choose applicant')
 parser.add_argument('-N', '--NO', type=int, default=0)
 args = parser.parse_args()
 print(args)
-personal_info = personal_info_0
+personal_info = personal_infos[0]
 applicant = args.NO
-if applicant == 0:
-    personal_info = personal_info_0
-elif applicant == 1:
-    personal_info = personal_info_1
-elif applicant == 2:
-    personal_info = personal_info_2
-elif applicant == 3:
-    personal_info = personal_info_3
+
+personal_info = personal_infos[applicant]
 
 print(personal_info)
 browser = webdriver.Chrome()
